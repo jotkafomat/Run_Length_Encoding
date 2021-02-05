@@ -45,5 +45,9 @@ class Encoder
     accumulator
   end
 
+  def get_first_run(string)
+    string.slice(0,get_length_of_first_run(string))
+  end
+
 
 end

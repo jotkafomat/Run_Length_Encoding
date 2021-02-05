@@ -111,28 +111,28 @@ RSpec.describe Encoder do
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
 
-  # it "gets the run of first letters" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_first_run("aaabba")
-  #   result_2 = encoder.get_first_run("bba")
-  #   result_3 = encoder.get_first_run("ccc")
-  #   expect(result_1).to eq "aaa"
-  #   expect(result_2).to eq "bb"
-  #   expect(result_3).to eq "ccc"
-  # end
+  it "gets the run of first letters" do
+    encoder = Encoder.new
+    result_1 = encoder.get_first_run("aaabba")
+    result_2 = encoder.get_first_run("bba")
+    result_3 = encoder.get_first_run("ccc")
+    expect(result_1).to eq "aaa"
+    expect(result_2).to eq "bb"
+    expect(result_3).to eq "ccc"
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
 
-  # it "gets the letters after the first run" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_after_first_run("aaabba")
-  #   result_2 = encoder.get_after_first_run("bba")
-  #   result_3 = encoder.get_after_first_run("a")
-  #   expect(result_1).to eq "bba"
-  #   expect(result_2).to eq "a"
-  #   expect(result_3).to eq ""
-  # end
+  it "gets the letters after the first run" do
+    encoder = Encoder.new
+    result_1 = encoder.get_after_first_run("aaabba")
+    result_2 = encoder.get_after_first_run("bba")
+    result_3 = encoder.get_after_first_run("a")
+    expect(result_1).to eq "bba"
+    expect(result_2).to eq "a"
+    expect(result_3).to eq ""
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
