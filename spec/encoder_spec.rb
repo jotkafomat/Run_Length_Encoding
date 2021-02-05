@@ -89,24 +89,24 @@ RSpec.describe Encoder do
     encoder = Encoder.new
     result_1 = encoder.is_all_first_letter?("aaa")
     result_2 = encoder.is_all_first_letter?("abba")
-    expect(result_1).to eq true
+      expect(result_1).to eq true
     expect(result_2).to eq false
   end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
 
-  # it "gets the length of the first run of first letters" do
-  #   # This one can be a little bit tricky. You may find it useful to think about
-  #   # how you would do this on paper.
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_length_of_first_run("aaabba")
-  #   result_2 = encoder.get_length_of_first_run("abba")
-  #   result_3 = encoder.get_length_of_first_run("ccc")
-  #   expect(result_1).to eq 3
-  #   expect(result_2).to eq 1
-  #   expect(result_3).to eq 3
-  # end
+  it "gets the length of the first run of first letters" do
+    # This one can be a little bit tricky. You may find it useful to think about
+    # how you would do this on paper.
+    encoder = Encoder.new
+    result_1 = encoder.get_length_of_first_run("aaabba")
+    result_2 = encoder.get_length_of_first_run("abba")
+    result_3 = encoder.get_length_of_first_run("ccc")
+    expect(result_1).to eq 3
+    expect(result_2).to eq 1
+    expect(result_3).to eq 3
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.

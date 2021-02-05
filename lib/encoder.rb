@@ -30,4 +30,20 @@ class Encoder
     is_all_this_letter?(string, letter)
   end
 
+  def get_length_of_first_run(string)
+    return get_length(string) if is_all_first_letter?(string)
+
+    letter = get_first_letter(string)
+    accumulator = 0
+    array = string_to_list(string)
+
+    while array.first == letter
+      accumulator += 1
+      array.shift
+    end
+
+    accumulator
+  end
+
+
 end
