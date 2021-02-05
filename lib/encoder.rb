@@ -11,6 +11,9 @@ class Encoder
   def string_to_list(string)
     string.chars
   end
-
+  def is_all_as?(string)
+    string_to_list(string).uniq.count == 1 &&
+    string_to_list(string).uniq.first == "a"
+  end
 
 end

@@ -65,13 +65,13 @@ RSpec.describe Encoder do
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "tells if the string is all 'a's" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.is_all_as?("aaa")
-  #   result_2 = encoder.is_all_as?("abba")
-  #   expect(result_1).to eq true
-  #   expect(result_2).to eq false
-  # end
+  it "tells if the string is all 'a's" do
+    encoder = Encoder.new
+    result_1 = encoder.is_all_as?("aaa")
+    result_2 = encoder.is_all_as?("abba")
+    expect(result_1).to eq true
+    expect(result_2).to eq false
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
