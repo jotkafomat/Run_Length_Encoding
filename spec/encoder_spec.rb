@@ -34,13 +34,13 @@ RSpec.describe Encoder do
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "gets the first letter of a string" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_first_letter("aaa")
-  #   result_2 = encoder.get_first_letter("bbbbb")
-  #   expect(result_1).to eq "a"
-  #   expect(result_2).to eq "b"
-  # end
+  it "gets the first letter of a string" do
+    encoder = Encoder.new
+    result_1 = encoder.get_first_letter("aaa")
+    result_2 = encoder.get_first_letter("bbbbb")
+    expect(result_1).to eq "a"
+    expect(result_2).to eq "b"
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
