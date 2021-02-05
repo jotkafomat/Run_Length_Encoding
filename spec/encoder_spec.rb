@@ -55,33 +55,33 @@ RSpec.describe Encoder do
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
 
-  # it "converts a string to a list of letters" do
+  it "converts a string to a list of letters" do
+    encoder = Encoder.new
+    result_1 = encoder.string_to_list("aaa")
+    result_2 = encoder.string_to_list("bbbbb")
+    expect(result_1).to eq ["a", "a", "a"]
+    expect(result_2).to eq ["b", "b", "b", "b", "b"]
+  end
+
+  # INSTRUCTION: Do a commit before uncommenting the next test.
+
+  # it "tells if the string is all 'a's" do
   #   encoder = Encoder.new
-  #   result_1 = encoder.string_to_list("aaa")
-  #   result_2 = encoder.string_to_list("bbbbb")
-  #   expect(result_1).to eq ["a", "a", "a"]
-  #   expect(result_2).to eq ["b", "b", "b", "b", "b"]
+  #   result_1 = encoder.is_all_as?("aaa")
+  #   result_2 = encoder.is_all_as?("abba")
+  #   expect(result_1).to eq true
+  #   expect(result_2).to eq false
   # end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  it "tells if the string is all 'a's" do
-    encoder = Encoder.new
-    result_1 = encoder.is_all_as?("aaa")
-    result_2 = encoder.is_all_as?("abba")
-    expect(result_1).to eq true
-    expect(result_2).to eq false
-  end
-
-  # INSTRUCTION: Do a commit before uncommenting the next test.
-
-  it "tells if the string is all a particular letter" do
-    encoder = Encoder.new
-    result_1 = encoder.is_all_this_letter?("aaa", "a")
-    result_2 = encoder.is_all_this_letter?("abba", "b")
-    expect(result_1).to eq true
-    expect(result_2).to eq false
-  end
+  # it "tells if the string is all a particular letter" do
+  #   encoder = Encoder.new
+  #   result_1 = encoder.is_all_this_letter?("aaa", "a")
+  #   result_2 = encoder.is_all_this_letter?("abba", "b")
+  #   expect(result_1).to eq true
+  #   expect(result_2).to eq false
+  # end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
