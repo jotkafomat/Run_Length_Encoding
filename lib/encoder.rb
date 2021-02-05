@@ -8,7 +8,7 @@ class Encoder
   end
 
   def get_first_letter_and_length(string)
-    "#{get_first_letter(string)}" + "#{get_length(string)}"
+    get_first_letter(string) + get_length(string).to_s
   end
 
   def string_to_list(string)
@@ -16,8 +16,7 @@ class Encoder
   end
 
   def is_all_as?(string)
-    string_to_list(string).uniq.count == 1 &&
-    string_to_list(string).uniq.first == "a"
+    string_to_list(string).uniq == ["a"]
   end
 
   def is_all_this_letter?(string, letter)
@@ -51,8 +50,8 @@ class Encoder
 
   def get_after_first_run(string)
     length_of_first_run = get_length_of_first_run(string)
-    length_of_remaining_string = get_length(string) - number
-    string[number, length]
+    length_of_remaining_string = get_length(string) - length_of_first_run
+    string[length_of_first_run, length_of_remaining_string]
   end
 
 
