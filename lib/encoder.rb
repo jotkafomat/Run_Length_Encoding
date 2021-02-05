@@ -26,18 +26,18 @@ class Encoder
   end
 
   def is_all_first_letter?(string)
-    letter = get_first_letter(string)
-    is_all_this_letter?(string, letter)
+    first_letter = get_first_letter(string)
+    is_all_this_letter?(string, first_letter)
   end
 
   def get_length_of_first_run(string)
     return get_length(string) if is_all_first_letter?(string)
 
-    letter = get_first_letter(string)
+    first_letter = get_first_letter(string)
     accumulator = 0
     array = string_to_list(string)
 
-    while array.first == letter
+    while array.first == first_letter
       accumulator += 1
       array.shift
     end
@@ -50,8 +50,8 @@ class Encoder
   end
 
   def get_after_first_run(string)
-    number = get_length_of_first_run(string)
-    length = get_length(string) - number
+    length_of_first_run = get_length_of_first_run(string)
+    length_of_remaining_string = get_length(string) - number
     string[number, length]
   end
 
