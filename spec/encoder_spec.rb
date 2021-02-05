@@ -85,13 +85,13 @@ RSpec.describe Encoder do
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "tells if the string is all its first letter" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.is_all_first_letter?("aaa")
-  #   result_2 = encoder.is_all_first_letter?("abba")
-  #   expect(result_1).to eq true
-  #   expect(result_2).to eq false
-  # end
+  it "tells if the string is all its first letter" do
+    encoder = Encoder.new
+    result_1 = encoder.is_all_first_letter?("aaa")
+    result_2 = encoder.is_all_first_letter?("abba")
+    expect(result_1).to eq true
+    expect(result_2).to eq false
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.

@@ -25,4 +25,9 @@ class Encoder
     string_to_list(string).uniq.first == letter
   end
 
+  def is_all_first_letter?(string)
+    letter = get_first_letter(string)
+    is_all_this_letter?(string, letter)
+  end
+
 end
