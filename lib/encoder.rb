@@ -49,5 +49,11 @@ class Encoder
     string.slice(0,get_length_of_first_run(string))
   end
 
+  def get_after_first_run(string)
+    number = get_length_of_first_run(string)
+    length = get_length(string) - number
+    string[number, length]
+  end
+
 
 end
