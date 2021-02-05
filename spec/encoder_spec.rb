@@ -44,13 +44,13 @@ RSpec.describe Encoder do
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "gets the first letter and the length" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_first_letter_and_length("aaa")
-  #   result_2 = encoder.get_first_letter_and_length("bbbbb")
-  #   expect(result_1).to eq "a3"
-  #   expect(result_2).to eq "b5"
-  # end
+  it "gets the first letter and the length" do
+    encoder = Encoder.new
+    result_1 = encoder.get_first_letter_and_length("aaa")
+    result_2 = encoder.get_first_letter_and_length("bbbbb")
+    expect(result_1).to eq "a3"
+    expect(result_2).to eq "b5"
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
@@ -65,23 +65,23 @@ RSpec.describe Encoder do
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "tells if the string is all 'a's" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.is_all_as?("aaa")
-  #   result_2 = encoder.is_all_as?("abba")
-  #   expect(result_1).to eq true
-  #   expect(result_2).to eq false
-  # end
+  it "tells if the string is all 'a's" do
+    encoder = Encoder.new
+    result_1 = encoder.is_all_as?("aaa")
+    result_2 = encoder.is_all_as?("abba")
+    expect(result_1).to eq true
+    expect(result_2).to eq false
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "tells if the string is all a particular letter" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.is_all_this_letter?("aaa", "a")
-  #   result_2 = encoder.is_all_this_letter?("abba", "b")
-  #   expect(result_1).to eq true
-  #   expect(result_2).to eq false
-  # end
+  it "tells if the string is all a particular letter" do
+    encoder = Encoder.new
+    result_1 = encoder.is_all_this_letter?("aaa", "a")
+    result_2 = encoder.is_all_this_letter?("abba", "b")
+    expect(result_1).to eq true
+    expect(result_2).to eq false
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 

@@ -3,6 +3,12 @@ class Encoder
     string.length
   end
   def get_first_letter(string)
-    string.chars.first
+    string.chr
   end
+  def get_first_letter_and_length(string)
+    "#{get_first_letter(string)}" + "#{get_length(string)}"
+  end
+  
+
+
 end
