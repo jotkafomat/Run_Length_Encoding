@@ -162,37 +162,37 @@ RSpec.describe Encoder do
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "gets first letter and lengths of all runs" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_first_letter_and_length_of_runs("aaabba")
-  #   result_2 = encoder.get_first_letter_and_length_of_runs("bba")
-  #   result_3 = encoder.get_first_letter_and_length_of_runs("a")
-  #   expect(result_1).to eq ["a3", "b2", "a1"]
-  #   expect(result_2).to eq ["b2", "a1"]
-  #   expect(result_3).to eq ["a1"]
-  # end
+  it "gets first letter and lengths of all runs" do
+    encoder = Encoder.new
+    result_1 = encoder.get_first_letter_and_length_of_runs("aaabba")
+    result_2 = encoder.get_first_letter_and_length_of_runs("bba")
+    result_3 = encoder.get_first_letter_and_length_of_runs("a")
+    expect(result_1).to eq ["a3", "b2", "a1"]
+    expect(result_2).to eq ["b2", "a1"]
+    expect(result_3).to eq ["a1"]
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "gets first letter and lengths of all runs but treats one-letter runs specially" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_first_letter_and_length_of_runs_with_special("aaabba")
-  #   result_2 = encoder.get_first_letter_and_length_of_runs_with_special("bba")
-  #   result_3 = encoder.get_first_letter_and_length_of_runs_with_special("a")
-  #   expect(result_1).to eq ["a3", "b2", "a"]
-  #   expect(result_2).to eq ["b2", "a"]
-  #   expect(result_3).to eq ["a"]
-  # end
+  it "gets first letter and lengths of all runs but treats one-letter runs specially" do
+    encoder = Encoder.new
+    result_1 = encoder.get_first_letter_and_length_of_runs_with_special("aaabba")
+    result_2 = encoder.get_first_letter_and_length_of_runs_with_special("bba")
+    result_3 = encoder.get_first_letter_and_length_of_runs_with_special("a")
+    expect(result_1).to eq ["a3", "b2", "a"]
+    expect(result_2).to eq ["b2", "a"]
+    expect(result_3).to eq ["a"]
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 
-  # it "re-combines the strings and so does run length encoding fully" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.encode("abba")
-  #   result_2 = encoder.encode("roooooaaaaaarrr")
-  #   result_3 = encoder.encode("woooooooooooo i am doing iiiit!!!")
-  #   expect(result_1).to eq "ab2a"
-  #   expect(result_2).to eq "ro5a6r3"
-  #   expect(result_3).to eq "wo12 i am doing i4t!3"
-  # end
+  it "re-combines the strings and so does run length encoding fully" do
+    encoder = Encoder.new
+    result_1 = encoder.encode("abba")
+    result_2 = encoder.encode("roooooaaaaaarrr")
+    result_3 = encoder.encode("woooooooooooo i am doing iiiit!!!")
+    expect(result_1).to eq "ab2a"
+    expect(result_2).to eq "ro5a6r3"
+    expect(result_3).to eq "wo12 i am doing i4t!3"
+  end
 end

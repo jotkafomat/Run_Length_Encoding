@@ -22,6 +22,7 @@ class Encoder
   def is_all_this_letter?(string, letter)
     string_to_list(string).uniq.count == 1 &&
     string_to_list(string).uniq.first == letter
+
   end
 
   def is_all_first_letter?(string)
@@ -70,6 +71,23 @@ class Encoder
       item.length
     }
   end
+
+  def get_first_letter_and_length_of_runs(string)
+    get_all_runs(string).map { |item|
+      get_first_letter(item) + item.length.to_s
+    }
+  end
+
+  def get_first_letter_and_length_of_runs_with_special(string)
+    get_all_runs(string).map { |item|
+      get_first_letter(item) + (item.length > 1 ? item.length.to_s : "")
+    }
+  end
+
+  def encode(string)
+    get_first_letter_and_length_of_runs_with_special(string).join("")
+  end
+
 
 
 end
