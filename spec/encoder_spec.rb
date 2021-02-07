@@ -150,15 +150,15 @@ RSpec.describe Encoder do
   # INSTRUCTION: Do a commit before uncommenting the next test.
   # INSTRUCTION: Talk to your coach before moving on.
 
-  # it "gets lengths of all runs of letters" do
-  #   encoder = Encoder.new
-  #   result_1 = encoder.get_lengths_of_all_runs("aaabba")
-  #   result_2 = encoder.get_lengths_of_all_runs("bba")
-  #   result_3 = encoder.get_lengths_of_all_runs("a")
-  #   expect(result_1).to eq [3, 2, 1]
-  #   expect(result_2).to eq [2, 1]
-  #   expect(result_3).to eq [1]
-  # end
+  it "gets lengths of all runs of letters" do
+    encoder = Encoder.new
+    result_1 = encoder.get_lengths_of_all_runs("aaabba")
+    result_2 = encoder.get_lengths_of_all_runs("bba")
+    result_3 = encoder.get_lengths_of_all_runs("a")
+    expect(result_1).to eq [3, 2, 1]
+    expect(result_2).to eq [2, 1]
+    expect(result_3).to eq [1]
+  end
 
   # INSTRUCTION: Do a commit before uncommenting the next test.
 

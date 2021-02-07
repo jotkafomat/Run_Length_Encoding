@@ -65,5 +65,11 @@ class Encoder
     result
   end
 
+  def get_lengths_of_all_runs(string)
+    get_all_runs(string).map { |item|
+      item.length
+    }
+  end
+
 
 end
