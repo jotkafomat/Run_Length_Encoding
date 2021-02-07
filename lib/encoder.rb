@@ -54,5 +54,16 @@ class Encoder
     string[length_of_first_run, length_of_remaining_string]
   end
 
+  def get_all_runs(string)
+    result = []
+    working_string = string
+    while get_length_of_first_run(working_string) > 0
+      result.push(get_first_run(working_string))
+      working_string = get_after_first_run(working_string)
+    end
+
+    result
+  end
+
 
 end
